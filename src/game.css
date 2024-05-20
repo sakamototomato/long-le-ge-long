@@ -1,0 +1,24 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid beige;
+    width: 50rem;
+    height: 50rem;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+.cell {
+    display: block;
+    flex: 0.2;
+    background: gray;
+
+}
+.row:nth-child(2n) .cell:nth-child(2n),
+.row:nth-child(2n + 1) .cell:nth-child(2n + 1)  {
+    background: rgb(218, 217, 217);
+}
